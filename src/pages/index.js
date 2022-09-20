@@ -3,6 +3,8 @@ import Layout from '../components/Layout'
 import { StaticImage } from "gatsby-plugin-image"
 import {container} from '../assets/css/container.module.css'
 
+import SEO from '../components/SEO'
+
 const index = () => {
     return (
         <Layout pageName='Home'>
@@ -17,6 +19,6 @@ const index = () => {
     )
 }
 
-const Head = () => <title>Home</title>
+export const Head = () => <SEO title="Home"/>
 
 export default index

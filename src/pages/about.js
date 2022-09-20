@@ -1,12 +1,14 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
-import {container} from '../assets/css/container.module.css'
+import {about} from '../assets/css/container.module.css'
+
+import SEO from '../components/SEO'
 
 const index = () => {
     return (
         <Layout pageName='About'>
-            <div className={`about ${container}`}>
+            <div className={`about ${about}`}>
                 <p>Hello world</p>
                 <StaticImage 
                     src="../images/sea.png" 
@@ -17,6 +19,6 @@ const index = () => {
     )
 }
 
-const Head = () => <title>About</title>
+export const Head = () => <SEO title="About"/>
 
 export default index
