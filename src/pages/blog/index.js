@@ -5,6 +5,7 @@ import Layout from '../../components/Layout'
 import SEO from '../../components/SEO'
 
 const  blog = ({data}) => {
+    console.log(data)
     return (
         <Layout pageName={'Blog'}>
             <p>Blogs come here</p>
